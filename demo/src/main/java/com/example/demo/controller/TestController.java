@@ -16,8 +16,8 @@ public class TestController{
     private RedisTemplate redisTemplate;
     @GetMapping("test")
     public void send(){
-       redisTemplate.opsForValue().set("abc","AAAAAAAAAAAAAA");
-        ValueOperations<Serializable,String> valueOperations = redisTemplate.opsForValue();
-        System.out.println(redisTemplate.opsForValue().get("dnf"));
+//       redisTemplate.opsForValue().set("wds","AAAAAAAAAAAAAA");
+//        ValueOperations<Serializable,String> valueOperations = redisTemplate.opsForValue();
+        System.out.println(redisTemplate.opsForValue().get("wds"));
     }
 }
